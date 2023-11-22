@@ -1,0 +1,34 @@
+/* Estilos para el contenedor del carrito */
+.cartAdd {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 200px;
+  }
+  
+  /* Estilos para la lista de productos en el carrito */
+  .cartAdd ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada elemento de la lista (producto en el carrito) */
+  .cartAdd li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .cartAdd button {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cartAdd button:hover {
+  background-color: #cc0000;
+}

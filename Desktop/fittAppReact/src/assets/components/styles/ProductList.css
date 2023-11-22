@@ -1,0 +1,27 @@
+/* Estilos para el contenedor principal de la lista de productos */
+.tituloContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+  }
+  
+  /* Estilos para el título de la lista de productos */
+  .tituloContainer h2 {
+    color: #333;
+  }
+  
+  /* Estilos para la sección de la lista de productos */
+  .productlist-container section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  /* Estilos para cada elemento de la lista de productos (cada producto) */
+  .productlist-container section .divContainer {
+    margin: 100px;
+  }
+  
+  

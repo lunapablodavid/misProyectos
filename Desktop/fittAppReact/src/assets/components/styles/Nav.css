@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position:sticky;
+  top:0;
+  left:0;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+/* Añade un margen superior al cuerpo para evitar que el contenido se solape con el nav */
+body {
+  margin-top: 40px;
+ /* Puedes ajustar el valor según la altura de tu nav */
+}
+  
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+  
+nav a:hover {
+  border-bottom: 2px solid white;
+}

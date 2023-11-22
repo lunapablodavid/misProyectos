@@ -1,0 +1,210 @@
+
+/*RESPONSIVE*/
+
+
+
+@media screen and (max-width:1252px){
+  
+    img{
+        width: 180px;
+        height: 180px;
+        }
+        .divContainer {
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            width: 350px;
+            height: 630px;
+            text-align:left;
+            text-align: center;
+            font-size: small;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+           }
+      .productlist-container section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 90px;
+       padding-left: 20px;
+    padding-right: 20px; }
+
+
+}
+
+/******************************************/
+
+@media screen and (max-width:1200px){
+    .productContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        align-content: flex-end;
+        width: 290px;
+        height: 900px;
+        border: 1px solid;
+        text-align:left;
+        padding: 10px;
+        text-align: center;
+        font-size: small;
+      }
+ 
+img{
+    width: 130x;
+    height: 130px;
+}
+.productlist-container section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+   padding-left: 20px;
+padding-right: 20px; }
+
+
+}
+
+
+/********************************/
+
+
+
+
+
+
+
+@media screen and (max-width:1180px){
+    .divContainer {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 350px;
+        height: 630px;
+        text-align:left;
+        text-align: center;
+        font-size: small;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px;
+      }
+
+.productlist-container section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+   padding-left: 20px;
+padding-right: 20px; }
+
+
+}  
+.image{
+    width: 125x;
+    height: 175px;
+
+}
+
+
+/******************/
+
+@media screen and (max-width:1120px){
+    .divContainer {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 350px;
+        height: 630px;
+        text-align:left;
+        text-align: center;
+        font-size: small;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px;
+      }
+  
+img{
+    width: 120px;
+    height: 120px;
+}
+
+}
+
+
+
+/*******************************/
+
+
+@media screen and (max-width:1040px){
+    .divContainer {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 350px;
+        height: 630px;
+        text-align:left;
+        text-align: center;
+        font-size: small;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px;
+      }
+  
+img{
+    width: 120px;
+    height: 120px;
+}
+
+
+}
+/************************/
+
+@media screen and (max-width:1020px){
+    .divContainer {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 350px;
+        height: 630px;
+        text-align:left;
+        text-align: center;
+        font-size: small;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px;
+      }
+  
+img{
+    width: 72px;
+    height: 72px;
+}
+button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 45px;
+    font-size: 10px;
+}
+}
