@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "title": "whey protein",
+      "description": "Ganador de peso",
+      "price": 100,
+      "image": "https://www.uomax.com.ar/4347-large_default/whey-protein-ena-true-made-vainilla-ice-cream-x-453-gr.jpg",
+      "id": 1
+    },
+    {
+      "title": "proteína vegetal",
+      "description": "Ganador de peso",
+      "price": 150,
+      "image": "https://reflexnutrition.com/cdn/shop/files/Clear-Whey_Raspberry_PRODUCT_1080_1512x.png?v=1699370030",
+      "id": 2
+    },
+    {
+      "title": "proteína vegetal 2",
+      "description": "Ganador de peso",
+      "price": 150,
+      "image": "https://reflexnutrition.com/cdn/shop/files/Clear-Whey_Raspberry_PRODUCT_1080_1512x.png?v=1699370030",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "title": "calcio",
+      "description": "fuerte",
+      "price": "750",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_770346-MLA31020743531_062019-O.webp"
+    }
+  ],
+  "users": [
+    {
+      "name": "Pablo",
+      "apellido": "Luna",
+      "correo": "lunapablodavid@gmail.com",
+      "contraseña": 100,
+      "id": 1
+    },
+    {
+      "name": "whey protein",
+      "apellido": "Luna",
+      "correo": "Ganadordepeso@gmail.com",
+      "contraseña": 100,
+      "id": 2
+    },
+    {
+      "name": "mm",
+      "apellido": "Luna",
+      "correo": "123@gmail.com",
+      "contraseña": 123,
+      "id": 3
+    },
+    {
+      "name": "pepe",
+      "apellido": "pep'",
+      "correo": "pep@hotmail.com",
+      "contraseña": "12345",
+      "id": 4
+    },
+    {
+      "name": "1234",
+      "apellido": "1",
+      "correo": "1111111",
+      "contraseña": "123",
+      "id": 5
+    },
+    {
+      "name": "Pablo",
+      "apellido": "Luna",
+      "correo": "qwe",
+      "contraseña": "1q2w3e4r5t6y",
+      "id": 6
+    }
+  ],
+  "contacto": [
+    {
+      "name": "Pablo Luna",
+      "correo": "lunapablodavid@gmail.com",
+      "message": "Esta todo bien",
+      "id": 1
+    },
+    {
+      "name": "Pablo David",
+      "correo": "lunapablodavid@gmail.com",
+      "message": "qwe",
+      "id": 2
+    },
+    {
+      "name": "Pablo David",
+      "correo": "lunapablodavid@gmail.com",
+      "message": "qweasd",
+      "id": 3
+    },
+    {
+      "name": "Pablo David",
+      "correo": "ads@hotmail",
+      "message": "aqe",
+      "id": 4
+    }
+  ]
+}
