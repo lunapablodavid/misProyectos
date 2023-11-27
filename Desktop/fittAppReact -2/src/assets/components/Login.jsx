@@ -18,73 +18,80 @@ const Login = () => {
     })
     .then((data) => {
       setUsers(data);
-      console.log('Usuarios cargados:', data);
+      console.log('Usuarios cargados:', users);
     })
     .catch((error) => console.error(error));
 }, []);
 
 const handleLogin = () => {
-  console.log('Intentando iniciar sesión con usuario:', username, 'y contraseña:', password);
-
   // Verificar si el usuario y la contraseña coinciden con algún usuario en la lista
   const user = users.find(
-    (user) => username === user.correo && password === user.contraseña
-  );
+    (user) => username === user.correo && password === user.contraseña);
 
   if (user) {
-    console.log(`Iniciando sesión con usuario: ${username}`);
-    setLoginError('');
+    console.log(`Iniciando sesión con usuario: ${user.correo} y contraseña: ${user.contraseña}`);
+
+    setLoginError('Iniciando sesion');
   } else {
     setLoginError('Usuario o contraseña incorrectos');
+
   }
+
+  console.log('Intentando iniciar sesión con usuario:', username, 'y contraseña:', password);
 };
 
-  const handleSignUpClick = () => {
-    setShowSignUp(true);
-  };
+const handleSignUpClick = () => {
+  // Mostrar el componente SignUp al hacer clic en el botón "Registrarse"
+  setShowSignUp(true);
+};
 
-  const handleCloseSignUp = () => {
-    setShowSignUp(false);
-  };
+const handleCloseSignUp = () => {
+  // Ocultar el componente SignUp al cerrarlo
+  setShowSignUp(false);
+};
 
-  return (
-    <div className="login-container">
-      <h2 className="login-title">Iniciar Sesión</h2>
-      <form className="login-form">
-        <label className="login-label">
-          Usuario:
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className="login-input"
-          />
-        </label>
-        <br />
-        <label className="login-label">
-          Contraseña:
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="login-input"
-          />
-        </label>
-        <br />
-        <button type="button" onClick={handleLogin} className="login-button">
-          Iniciar Sesión
-        </button>
-        <br />
-        <button type="button" onClick={handleSignUpClick} className="login-button">
-          Registrarse
-        </button>
-      </form>
 
-      {loginError && <p className="login-error">{loginError}</p>}
-
-      {showSignUp && <SignUp onClose={handleCloseSignUp} />}
-    </div>
-  );
+return (
+  <div className="login-container">
+    {showSignUp ? (
+      <SignUp onClose={handleCloseSignUp} />
+    ) : (
+      <>
+        <h2 className="login-title">Iniciar Sesión</h2>
+        <form className="login-form">
+          <label className="login-label">
+            Usuario / Correo:
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="login-input"
+            />
+          </label>
+          <br />
+          <label className="login-label">
+            Contraseña:
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="login-input"
+            />
+          </label>
+          <br />
+          <button type="button" onClick={() => handleLogin()} className="login-button">
+            Iniciar Sesión
+          </button>
+          <br />
+          <button type="button" onClick={handleSignUpClick} className="login-button">
+            Registrarse
+          </button>
+        </form>
+        {loginError && <p className="login-error">{loginError}</p>}
+      </>
+    )}
+  </div>
+);
 };
 
 export default Login;

@@ -13,7 +13,7 @@ return(
   </div>
  
       <section>
-      {products.map((prod)=> <Product key={prod.id} product={prod}  addCart={addCart} removeProductFromCart={removeProductFromCart}/>)} 
+      {products.map((prod)=> <Product key={prod.id} product={prod}  addCart={addCart} removeProductFromCart={removeProductFromCart} />)} 
       </section>
   </div>
 

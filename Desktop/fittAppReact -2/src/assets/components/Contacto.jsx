@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import './styles/contacto.css';
 
 const Contacto = () => {
-  const [formData, setFormData] = useState({
+ 
+  const initialState = {
     nombre: '',
     email: '',
     mensaje: '',
-  });
+  };
 
+  const [formData, setFormData] = useState(initialState);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -16,11 +19,33 @@ const Contacto = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aquí puedes realizar acciones con los datos del formulario, como enviarlos a la API
-    console.log('Datos del formulario:', formData);
-    // Puedes agregar la lógica para enviar los datos al servidor NestJS aquí
+
+    try {
+      const response = await fetch('http://localhost:3030/contacto/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.nombre,
+          correo: formData.email,
+          message: formData.mensaje,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error al enviar el formulario: ${response.status} - ${response.statusText}`);
+      }
+      setFormData(initialState);
+      // Realizar acciones adicionales si es necesario
+      console.log('Formulario enviado con éxito');
+
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error.message);
+      setError('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
+    }
   };
 
   return (
@@ -29,6 +54,7 @@ const Contacto = () => {
       <br />
       <p>Bienvenido a nuestro formulario de contacto. Estamos aquí para responder tus preguntas y comentarios. ¡Contáctanos!</p>
       <br />
+      {error && <p className="error-message">{error}</p>}
       <form onSubmit={handleSubmit}>
         <label htmlFor="nombre">Nombre:</label>
         <input

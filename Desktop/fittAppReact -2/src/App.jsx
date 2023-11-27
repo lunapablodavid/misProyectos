@@ -8,6 +8,7 @@ import SignUp from './assets/components/SignUp';
 import Home from './assets/components/Home';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './assets/components/styles/Nav.css'; 
+import LoadProduct from './assets/components/LoadPRoduct';
 
 
 
@@ -96,6 +97,7 @@ return (
 
         <Link to="/Login">Sesion</Link>
   
+        <Link to="/LoadProduct">Menu</Link>
      </nav>
 
      
@@ -108,10 +110,11 @@ return (
 
          <Route path="/Cart" element={<Cart cart={getDerivedCart()} removeProductFromCart={removeProductFromCart}  />} />
 
-
-         <Route path="/Login" element={<Login />}/>
+         <Route path="/Login" element={<Login/>}/> 
+         
          <Route path="/signup" element={<SignUp/>} />
      
+         <Route path="/LoadProduct" element={<LoadProduct/>}/> 
      </Routes>
 
 </BrowserRouter>
